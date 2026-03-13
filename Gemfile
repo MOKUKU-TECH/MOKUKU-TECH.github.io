@@ -1,16 +1,33 @@
 # frozen_string_literal: true
 
+
 source "https://rubygems.org"
 
+# https://stackoverflow.com/questions/73903473/jekyll-4-0-0-error-uninitialized-constant-tzinfotimezone
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
 platforms :mingw, :x64_mingw, :mswin, :jruby do
-  gem "tzinfo", ">= 1", "< 3"
+  gem "tzinfo"
   gem "tzinfo-data"
 end
 
-# Performance-booster for watching directories on Windows
-gem "wdm", "~> 0.1", :platforms => [:mingw, :x64_mingw, :mswin]
-  
-gemspec
+# 获取当前平台信息
+platform = RbConfig::CONFIG['host_os']
 
+puts "Current platform: #{platform} #{RbConfig::CONFIG['host_cpu']}"
+
+# 检查是否为 aarch64-linux-android 平台
+if platform == 'linux'
+  gem "csv"
+  gem "logger"
+  gem "base64"
+  gem "bigdecimal"
+end
+
+# 检查是否为 aarch64-linux-android 平台
+if platform == 'linux-android' && RbConfig::CONFIG['host_cpu'] == 'aarch64'
+  gem "base64"
+  gem "bigdecimal"
+end
+
+gemspec

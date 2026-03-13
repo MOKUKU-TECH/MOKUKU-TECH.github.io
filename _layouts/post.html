@@ -4,9 +4,14 @@ layout: base
 
 {% include header.html type="post" %}
 
-<main class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}">
+<div class="container-md">
   <div class="row">
-    <div class="{% if page.full-width %} col {% else %} col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 {% endif %}">
+    <!-- Left Sidebar (TOC) -->
+    <aside class="d-none d-lg-block">
+      <nav id="toc" class="toc"></nav>
+    </aside>
+
+    <div class="offset-lg-1 col-lg-10 offset-lg-1">
 
       {% if page.gh-repo %}
         {% assign gh_split =  page.gh-repo | split:'/'  %}
@@ -31,58 +36,61 @@ layout: base
         </div>
       {% endif %}
 
-      {% if page.before-content %}
-        <div class="before-content">
-          {% for file in page.before-content %}
-            {% include {{ file }} %}
-          {% endfor %}
-        </div>
-      {% endif %}
-
-      <div class="blog-post">
+      <!-- Main Content -->
+      <article role="main" class="blog-post">
         {{ content }}
-      </div>
+      </article>
 
       {% if page.tags.size > 0 %}
         <div class="blog-tags">
-          <span>Tags:</span>
+          Tags:
+          {% if site.link-tags %}
           {% for tag in page.tags %}
             <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
           {% endfor %}
+          {% else %}
+            {{ page.tags | join: ", " }}
+          {% endif %}
         </div>
       {% endif %}
 
-      {% if page.after-content %}
-        <div class="after-content">
-          {% for file in page.after-content %}
-            {% include {{ file }} %}
-          {% endfor %}
-        </div>
-      {% endif %}
 
       {% if page.social-share %}
         {% include social-share.html %}
       {% endif %}
 
+
+      <!-- Related posts start here! -->
+      <!-- {%- if site.related_posts -%}
+        {% if site.related_posts.size >= 1 %}
+        {% if page.language == 'chinese' %}
+        <h1 id="posts-label">相关文章</h1>
+        {% else %}
+        <h1 id="posts-label">You may also like</h1>
+        {% endif %}
+        <div class = "related-posts-box">
+        <ul>
+          {% for related_post in site.related_posts limit: 5 %}
+          <li><a href="{{ related_post.url | relative_url  }}">{{ related_post.title | escape}}</a></li>
+          {% endfor %}
+        </ul>
+        </div>
+        {% endif %}
+      {% endif %} -->
+
       <ul class="pagination blog-pager">
         {% if page.previous.url %}
         <li class="page-item previous">
-          <a class="page-link" href="{{ page.previous.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title | strip_html | xml_escape}}">
-            <i class="fas fa-arrow-left" alt="Previous Post"></i>
-            <span class="d-none d-sm-inline-block">Previous Post</span>
-          </a>
+          <a class="page-link" href="{{ page.previous.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
         </li>
         {% endif %}
         {% if page.next.url %}
         <li class="page-item next">
-          <a class="page-link" href="{{ page.next.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title | strip_html | xml_escape}}">
-            <span class="d-none d-sm-inline-block">Next Post</span>
-            <i class="fas fa-arrow-right" alt="Next Post"></i>
-          </a>
+          <a class="page-link" href="{{ page.next.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
         </li>
         {% endif %}
       </ul>
       {% include comments.html %}
     </div>
   </div>
-</main>
+</div>

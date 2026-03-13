@@ -1,31 +1,56 @@
 ---
 layout: base
+common-css:
+  - "/assets/css/bootstrap-social.css"
+  - "/assets/css/main.css"
+  - "/assets/css/tree.css"
 ---
+
+<head>
+<style>
+details > summary {
+  padding: 4px;
+  width: 200px;
+  background-color: #eeeeee;
+  border: none;
+  box-shadow: 1px 1px 2px #bbbbbb;
+  cursor: pointer;
+}
+
+details > li {
+  background-color: #eeeeee;
+  padding: 4px;
+  margin: 0;
+  box-shadow: 1px 1px 2px #bbbbbb;
+}
+
+details > p {
+  background-color: #eeeeee;
+  padding: 4px;
+  margin: 0;
+  box-shadow: 1px 1px 2px #bbbbbb;
+}
+</style>
+</head>
 
 {% include header.html type="page" %}
 
-<main class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}">
+<button id="myBtn"><a href="#top" style="color: white">Back to Top</a></button>
+
+<div class="container-md" role="main">
   <div class="row">
-    <div class="{% if page.full-width %} col {% else %} col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 {% endif %}">
-      {% if page.before-content %}
-        <div class="before-content">
-          {% for file in page.before-content %}
-            {% include {{ file }} %}
-          {% endfor %}
-        </div>
+    <div class="offset-lg-1 col-lg-10 offset-lg-1">
+
+      {% assign show_toc = page.show_toc | default: false %}
+      {% if show_toc %}
+      <!-- Left Sidebar (TOC) -->
+      <aside class="d-none d-lg-block">
+        <nav id="toc" class="toc"></nav>
+      </aside>
       {% endif %}
 
       {{ content }}
-
-      {% if page.after-content %}
-        <div class="after-content">
-          {% for file in page.after-content %}
-            {% include {{ file }} %}
-          {% endfor %}
-        </div>
-      {% endif %}
-
       {% include comments.html %}
     </div>
   </div>
-</main>
+</div>

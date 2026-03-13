@@ -2,7 +2,7 @@
 _site
 .sass-cache
 .vagrant
-
+data
 # general
 .DS_Store
 Thumbs.db
@@ -11,3 +11,4 @@ ehthumbs.db
 Gemfile.lock
 
 beautiful-jekyll-theme-*.gem
+.jekyll-metadata
