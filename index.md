@@ -1,6 +1,7 @@
 ---
 layout: base
 title: MOKUKU's website
+cover-img: /assets/img/banner1.jpg
 css:
   - /assets/css/index.css
 ---
