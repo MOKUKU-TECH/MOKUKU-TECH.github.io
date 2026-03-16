@@ -1,26 +1,28 @@
 ---
 layout: base
 title: MOKUKU's website
+cover-img: /assets/img/banner1.jpg
+thumbnail-img: /assets/img/banner1.jpg
 css:
   - /assets/css/index.css
 ---
 
-<div id="header" markdown="1">
+<div id="header" style="background-image: url('assets/img/banner1.jpg'); height:700px; background-size: cover; background-position: center;" markdown="1">
 
-# The Open Clearing {#title}
+# MOKUKU AI Robot {#title}
 
-## thought, code, and digital being {#subtitle}
+## Driving Companion {#subtitle}
 
 </div>
 
-<div id="main-sections" style="margin-top:-30px;">
+<div id="main-sections">
 
-<div id="learning-section-out" class="page-section">
-  <div id="learning-section">
-    <div class="section-title">Keep learning</div>
+<div id="function-section-out" class="page-section">
+  <div id="function-section">
+    <div class="section-title">Main Features</div>
 	<div id="learning-list" markdown="1">
 {% for info in site.data.learn_info %}
-{% if info.icon %}<span class="learning-icon fa-fw {{ info.icon }}" aria-hidden="true"></span>{% endif info.icon %}
+{% if info.icon %}<span class="learning-icon">{{ info.icon }}</span>{% endif info.icon %}
 <span class="learning-content">{{ info.content }}</span>
 {: .learning-text }
 {% endfor %}
@@ -28,8 +30,13 @@ css:
   </div>
 </div>
 
-<div id="learning-section-out" class="page-section">
-<div id="learning-section">
+<div align="center">    
+<img src="/assets/img/display.gif" width="100%"/>
+</div>
+
+
+<div id="function-section-out" class="page-section">
+<div id="function-section">
   <div class="section-title">
     <a href="{{ "blog/index" | absolute_url }}">Blogs</a> - <a href="{{ "tags" | absolute_url }}">Tags</a>
   </div>
@@ -39,7 +46,7 @@ css:
 <div id="portfolio-out" class="page-section">
   <div id="portfolio">
     <div class="section-title">
-      My Projects
+      Our Projects
     </div>
     <div id="shinyapps-big" data-columns>
       {% for app in site.data.portfolio %}

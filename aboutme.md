@@ -2,6 +2,7 @@
 layout: page
 title: About MOKUKU
 subtitle: Why you'd want to go on a date with me
+cover-img: /assets/img/banner1.jpg
 ---
 
 **MOKUKU** is a small team focused on building creative hardware and software that makes technology more fun, expressive, and interactive.
