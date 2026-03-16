@@ -21,7 +21,7 @@ footer {
 
 #header {
   text-align: center;
-  margin-top: 3.125rem;
+  margin-top: 0rem;
 }
 
 #title {
@@ -31,6 +31,7 @@ footer {
   font-size: 4.375rem;
   font-weight: 700;
   line-height: 1.4;
+  color: #050504;
 }
 
 #subtitle  {
@@ -38,6 +39,7 @@ footer {
   margin: 0;
   font-size: 2.8125rem;
   line-height: 1.5;
+  color: #050504;
 }
 
 @media only screen and (min-width: 751px) {
@@ -108,7 +110,7 @@ footer {
     font-size: 1.75rem;
   }
 }
-html, body { background: #cde0fd; }
+html, body { background: #facf9d; }
 #header { padding: 6.25rem 0 7.5rem; color: #184377; }
 #header a { color: #184377; text-decoration: underline;}
 #header a:hover { color: #3380d4;}

@@ -2,15 +2,16 @@
 layout: base
 title: MOKUKU's website
 cover-img: /assets/img/banner1.jpg
+thumbnail-img: /assets/img/banner1.jpg
 css:
   - /assets/css/index.css
 ---
 
-<div id="header" markdown="1">
+<div id="header" style="background-image: url('assets/img/banner1.jpg'); height:700px; background-size: cover; background-position: center;" markdown="1">
 
-# The Open Clearing {#title}
+# MOKUKU AI Robot {#title}
 
-## thought, code, and digital being {#subtitle}
+## Driving Companion {#subtitle}
 
 </div>
 
