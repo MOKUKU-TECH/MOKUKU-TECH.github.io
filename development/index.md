@@ -4,5 +4,5 @@ title: Development Code Index
 ---
 
 
-* [Development code 1](./a)
+* [6DoF Pose Estimation in MOKUKU](./6dof)
 * [Development code 2](./b)
