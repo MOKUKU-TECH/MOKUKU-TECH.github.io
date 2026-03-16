@@ -2,6 +2,9 @@
   description: the Bluetooth Low Energy (BLE) protocol used by MOKUKU devices.
   img: ble_mkk.png
   url: https://github.com/MOKUKU-DEV/MOKUKU-BleControl
+- title : MOKUKU 3dof
+  description: MOKUKU 3dof algorithm
+  url: ./development/index
 - title: Visual SLAM in moving car
   description: Realtime visual localization and mapping, inside a moving car, with the car motion included.
   img: vo_car.gif
