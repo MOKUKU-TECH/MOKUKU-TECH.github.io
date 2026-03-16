@@ -6,7 +6,15 @@
   description: MOKUKU INS algorithm (6DOF and 3DOF).
   img: 6dof.gif
   url: ./development/index
+- title: Robust AR Navigation
+  description: This project introduces a vehicle-aware AR navigation system that combines car pose estimation, smartphone SLAM, and navigation data to enable stable and accurate augmented reality navigation on mobile devices.
+  img: arhud.gif
+  url: ./
 - title: Visual SLAM in moving car
   description: Realtime visual localization and mapping, inside a moving car, with the car motion included.
   img: vo_car.gif
+  url: ./
+- title: Deep Learning Visual Localization for Arbitrary Vehicle Back Seats
+  description: The method learns to detect stable structural features inside the car—such as windshield boundaries, A/B pillars, seat geometry, and interior edges—and uses them to estimate the camera pose relative to the vehicle.
+  img: carlo.gif
   url: ./
