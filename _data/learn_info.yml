@@ -1,3 +1,11 @@
 # for more icons https://fontawesome.com/v4/icons/
-- icon: fas fa-newspaper
-  content: "[Math](Math/): [Convex Optimization](Math/ConvexOptimization), [Graph Machine Learning](https://gnn-learning.readthedocs.io/en/latest/)"
+- icon: 🐣
+  content: Interactive Dual-Display System
+- icon: 🚘
+  content: Vehicle Data Integration
+- icon: 🤖
+  content: AI-Powered Interaction
+- icon: 🎬
+  content: Content & Media Management
+- icon: 🧩
+  content: System Extensibility

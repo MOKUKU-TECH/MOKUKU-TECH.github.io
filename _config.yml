@@ -12,19 +12,11 @@ author: MOKUKU group
 # --- List of links in the navigation bar --- #
 navbar-links:
   About Me: "aboutme"
-  # My Work:
-  #   - DeepMirror (current) : "WorkDeepMirror/index"
-  #   - UTOPA (ended): "WorkUtopa/index"
-  Documents:
-    - Philosophy : "Philosophy/index"
-    - Math : "Math/index"
-    - Biology : "Biology/index"
-    - Business: "Study/MBA/0index"
-    - Work Paper Read : "Study/PaperRead/index"
-#  Resources:
-#    - Beautiful Jekyll: "https://beautifuljekyll.com"
-#    - Learn markdown: "https://www.markdowntutorial.com/"
-  #Author's home: "https://deanattali.com"
+  Buy Now : "https://www.mokukushop.com/category/main"
+  # Documents:
+  #   - Philosophy : "Philosophy/index"
+  #   - Math : "Math/index"
+  #   - Biology : "Biology/index"
 
 # --- Logo --- #
 

@@ -1,4 +1,8 @@
 - title: MOKUKU BLE Communication Protocol
   description: the Bluetooth Low Energy (BLE) protocol used by MOKUKU devices.
-  img: ble.png
+  img: ble_mkk.png
   url: https://github.com/MOKUKU-DEV/MOKUKU-BleControl
+- title: Visual SLAM in moving car
+  description: Realtime visual localization and mapping, inside a moving car, with the car motion included.
+  img: vo_car.gif
+  url: ./
