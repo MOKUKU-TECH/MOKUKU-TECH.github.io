@@ -3,7 +3,7 @@
   img: ble_mkk.png
   url: https://github.com/MOKUKU-DEV/MOKUKU-BleControl
 - title : MOKUKU INS
-  description: MOKUKU INS algorithm (6DOF and 3DOF).
+  description: MOKUKU INS algorithm for inertial navigation. 6DOF mode fuses GNSS and IMU (ESIKF) for full pose (position + orientation); 3DOF mode uses IMU and forward velocity (ESKF) for orientation estimation with pitch focus.
   img: 6dof.gif
   url: ./development/index
 - title: Robust AR Navigation
