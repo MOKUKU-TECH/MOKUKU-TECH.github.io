@@ -2,7 +2,19 @@
   description: the Bluetooth Low Energy (BLE) protocol used by MOKUKU devices.
   img: ble_mkk.png
   url: https://github.com/MOKUKU-DEV/MOKUKU-BleControl
+- title : MOKUKU INS
+  description: MOKUKU INS algorithm for inertial navigation. 6DOF mode fuses GNSS and IMU (ESIKF) for full pose (position + orientation); 3DOF mode uses IMU and forward velocity (ESKF) for orientation estimation with pitch focus.
+  img: 6dof.gif
+  url: ./development/index
+- title: Robust AR Navigation
+  description: This project introduces a vehicle-aware AR navigation system that combines car pose estimation, smartphone SLAM, and navigation data to enable stable and accurate augmented reality navigation on mobile devices.
+  img: arhud.gif
+  url: ./
 - title: Visual SLAM in moving car
   description: Realtime visual localization and mapping, inside a moving car, with the car motion included.
   img: vo_car.gif
+  url: ./
+- title: Deep Learning Visual Localization for Arbitrary Vehicle Back Seats
+  description: The method learns to detect stable structural features inside the car—such as windshield boundaries, A/B pillars, seat geometry, and interior edges—and uses them to estimate the camera pose relative to the vehicle.
+  img: carlo.gif
   url: ./
