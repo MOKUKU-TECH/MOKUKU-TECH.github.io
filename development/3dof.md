@@ -5,7 +5,7 @@ title: 3DoF Angle Estimation in MOKUKU
 
 Error State Kalman Filter (ESKF) for three-degree-of-freedom orientation estimation using IMU (gyroscope + accelerometer) and scalar forward velocity.
 
-**Go to [MOKUKU-INS/3dof](https://github.com/MOKUKU-DEV/MOKUKU-INS/tree/zwh_update_6dof/3dof) for more details.**
+**Go to [MOKUKU-INS/3dof](https://github.com/MOKUKU-TECH/MOKUKU-INS/tree/main/3dof) for more details.**
 
 
 ## Algorithm Flow (Overview)

@@ -5,7 +5,7 @@ title: 6DoF Pose Estimation in MOKUKU
 
 Algorithm description for six-degree-of-freedom pose estimation using GPS and IMU.
 
-For detailed mathematical derivations (Jacobians, prediction/update steps), see [MOKUKU-INS/6dof](https://github.com/MOKUKU-DEV/MOKUKU-INS/tree/zwh_update_6dof/6dof).
+For detailed mathematical derivations (Jacobians, prediction/update steps), see [MOKUKU-INS/6dof](https://github.com/MOKUKU-TECH/MOKUKU-INS/tree/main/6dof).
 
 ---
 
