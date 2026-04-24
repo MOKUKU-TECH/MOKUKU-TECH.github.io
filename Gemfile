@@ -23,7 +23,6 @@ if platform == 'linux'
   gem "logger"
   gem "base64"
   gem "bigdecimal"
-  gem "appraisal"
 end
 
 # 检查是否为 aarch64-linux-android 平台
