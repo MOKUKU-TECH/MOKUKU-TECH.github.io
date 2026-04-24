@@ -11,6 +11,9 @@ platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem "tzinfo-data"
 end
 
+gem 'appraisal', group: :development
+
+
 # 获取当前平台信息
 platform = RbConfig::CONFIG['host_os']
 
